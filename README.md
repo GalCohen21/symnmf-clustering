@@ -17,7 +17,7 @@ The implementation combines Python and C:
 * C is used for the core numerical computations.
 * A Python-C API wrapper connects the Python code to the C implementation.
 
-Python-C API Integration
+## Python-C API Integration
 
 A central part of the project was connecting Python code with a C implementation using the Python-C API.
 
@@ -27,7 +27,7 @@ The symnmfmodule.c file acts as a wrapper between the Python layer and the C imp
 
 This structure demonstrates working with a multi-language codebase and defining a clean interface between different parts of a system.
 
-K-means Comparison
+## K-means Comparison
 
 The project also includes a comparison between SymNMF clustering and K-means clustering.
 
@@ -36,16 +36,17 @@ The analysis.py script compares the clustering quality of SymNMF and K-means usi
 
 This comparison helped evaluate whether the graph-based SymNMF approach produced better clustering results than a standard centroid-based clustering method.
 
-Repository Contents
-symnmf.py - main Python interface for running the SymNMF-related goals.
-symnmf.c - core C implementation of the algorithm and numerical computations.
-symnmf.h - C header file containing function declarations.
-symnmfmodule.c - Python-C API wrapper that exposes the C implementation to Python.
-setup.py - build configuration for the Python C extension.
-Makefile - compilation setup for the standalone C program.
-kmeans.py - K-means implementation developed earlier in the course and used for comparison.
-analysis.py - compares SymNMF clustering to K-means using silhouette score.
-Notes
+## Repository Contents
+- symnmf.py - main Python interface for running the SymNMF-related goals.
+- symnmf.c - core C implementation of the algorithm and numerical computations.
+- symnmf.h - C header file containing function declarations.
+- symnmfmodule.c - Python-C API wrapper that exposes the C implementation to Python.
+- setup.py - build configuration for the Python C extension.
+- Makefile - compilation setup for the standalone C program.
+- kmeans.py - K-means implementation developed earlier in the course and used for comparison.
+- analysis.py - compares SymNMF clustering to K-means using silhouette score.
+
+## Notes
 
 This repository contains the source code only.
 
